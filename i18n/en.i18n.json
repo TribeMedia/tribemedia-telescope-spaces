@@ -1,0 +1,8 @@
+{
+  "spaces" : "Spaces",
+  "manage_spaces" : "Manage spaces",
+  "image":"Image URL",
+  "coverImage":"Cover Image URL",
+  "slug":"Slug",
+  "ownerId":"Space Owner"
+}
