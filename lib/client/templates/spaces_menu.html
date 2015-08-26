@@ -1,5 +1,7 @@
 <template name="spaces_menu">
-  {{#if hasSpaces}}
-    {{> menuComponent menuName="spaces" menuItems=menuItems menuClass="header-submodule" menuMode=menuMode}}
-  {{/if}}
+    <div class="{{moduleClass}}">
+      {{#if hasSpaces}}
+        {{> menuComponent menuName="spaces" menuItems=menuItems menuClass=menuClass}}
+      {{/if}}
+    </div>
 </template>

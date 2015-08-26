@@ -17,19 +17,15 @@ Package.onUse(function(api) {
   api.versionsFrom("METEOR@1.0");
 
   api.use(['telescope:core@0.21.1',
-    'dbarrett:dropzonejs',
-    'cfs:standard-packages',
-    'aldeed:autoform@5.3.2',
-    'cfs:autoform@2.2.1',
-    'cfs:dropbox',
-    'jonblum:jquery-cropper']);
+    'telescope:posts']);
 
   api.addFiles([
     'lib/models/spaces.js',
+    'lib/models/posts.js',
     'lib/models/space_memberships.js',
     'lib/modules.js',
     'lib/hooks.js',
-    'lib/callbacks.js',
+    'lib/views.js',
     'lib/methods.js',
     'lib/menus.js',
     'lib/routes.js'
@@ -38,12 +34,21 @@ Package.onUse(function(api) {
   api.addFiles([
     'lib/client/templates/space.html',
     'lib/client/templates/space.js',
+    'lib/client/templates/space_item.html',
+    'lib/client/templates/space_item.js',
     'lib/client/templates/spaces.html',
     'lib/client/templates/spaces.js',
     'lib/client/templates/buttons/space_invite_button.html',
     'lib/client/templates/buttons/space_invite_button.js',
     'lib/client/templates/spaces_menu.html',
-    'lib/client/templates/spaces_menu.js'
+    'lib/client/templates/spaces_menu.js',
+    'lib/client/templates/posts/space_post_submit.html',
+    'lib/client/templates/posts/space_post_submit.js',
+    'lib/client/templates/posts/space_posts_list.html',
+    'lib/client/templates/posts/space_posts_list.js',
+    'lib/client/templates/posts/space_posts_view_nav.html',
+    'lib/client/templates/posts/space_posts_view_nav.js',
+    'lib/client/templates/posts/post_overrides.js'
   ], 'client');
 
   api.addFiles([

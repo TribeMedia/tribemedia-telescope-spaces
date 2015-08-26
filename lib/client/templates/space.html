@@ -1,3 +1,9 @@
 <template name="space">
-
+    <div class="page-container">
+        <h2 class="page-title">{{title}}</h2>
+      {{> space_posts_views_nav }}
+        <div class="page-body">
+          {{> space_posts_list }}
+        </div>
+    </div>
 </template>
